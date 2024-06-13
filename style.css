@@ -36,7 +36,54 @@ a{
     text-decoration: none;
     color: var(--brancoBase);
 }
+/*------------------------------------ Footer -----------------------------------*/
+footer{
+    align-content: center;
+    align-items: center;
+    margin: 2rem 0 0 0;
+    height: 22rem;
+    background-color: #0E0E0E;
+    color: white;
+}
+.contatos{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+.PrinFooter{
+    align-items: center;
+    margin: 1rem 2rem 0 2rem;
+    display: flex;
+    justify-content: space-around;
+   
 
+}
+.EndFooter{
+    background-color: #0E0E0E;
+    height: 6.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 1rem 0 0 0;
+    border-top: solid white 0.4rem;
+}
+.Info{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2rem;
+    border-left: solid white 0.4rem;
+    border-right: solid white 0.4rem;
+
+}
+.Info a{
+    padding: 4rem;
+}
+.logoFooter{
+
+    width: 25%;
+}
 /*-------------------------------- Header inicio --------------------------------*/
 
 .inicio{
