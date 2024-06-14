@@ -909,3 +909,34 @@ footer{
 .entrargoogle{
       color:var(--preto);
 }
+/*-------------------------------- Sobre nós --------------------------------*/
+.PrSobreNos{
+    display: flex;
+    margin: 10rem 2rem 10rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.sobreNos p{
+    font-size: 2rem;
+    line-height: 3.5rem;
+}
+.Arte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+.sobreNos h2{
+    font-size: 2rem;
+    color: #818181;
+    margin: 1rem 0 3.5rem 0;
+
+}
+.sobreNos h1{
+    font-size: 6rem;
+    color: #0E0E0E;
+    text-shadow: -10px 4px 0 #2B63F0;
+}
+
