@@ -58,7 +58,7 @@ psw.onkeyup = function() {
 }
 
 // Banner da página de login
-let banners = ["img/banner1.jpg", "img/banner2.jpg", "img/banner3.jpg"];
+let banners = ["img/banner1.jpg", "img/banner2.png", "img/banner3.jpg"];
 let indiceBanner = 0;
 
 function trocarBanner() {
