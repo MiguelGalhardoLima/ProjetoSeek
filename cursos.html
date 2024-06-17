@@ -44,11 +44,11 @@
 
     <section class="fy">
 
-        <div class="fyy">
+        <!-- <div class="fyy">
             <div class="filtro">
             <button><img src="img/filter1.svg" alt="Filtrar"></button>
             <button class="filtrar">Filtrar</button>
-            </div>
+            </div> -->
         
         </section>
 
@@ -57,51 +57,47 @@
         <!-- INICIO DA ABA DE FILTROS -->
         <section class="filtroflutuante">
 
-        <div class="h2flutuante"><h2>Campos de criação</h2></div>
-            <div class="filtrop">
-            <p>Designer</p>
-            <input  class="radio" type="radio">
-            <p>Ilustrador</p>
-            <input  class="radio" type="radio">
-            <p>Artista Visual</p>
-            <input  class="radio" type="radio">
-        </div>
+            <div class="fyy">
+                <div class="filtro">
+                <img src="img/Filtrar2.svg" alt="Filtrar">
+                <p class="filtrar">Filtrar</p>
+                </div>
+            </div>
 
-        <div class="h2flutuante"><h2>Campos de criação</h2></div>
+        <div class="h2flutuante"><h2>Tipos de Cursos</h2></div>
             <div class="filtrop">
-            <p>Ilustração</p>
-            <input  class="radio" type="radio">
-            <p>Design</p>
-            <input  class="radio" type="radio">
+            <p>Designer<input  class="radio" type="radio"></p>
+            <p>Ilustrador<input  class="radio" type="radio"></p>
+            <p>Fotográfia<input  class="radio" type="radio"></p>
+
         </div>
 
         <div class="h2flutuante"><h2>Preço</h2></div>
             <div class="filtrop">
-            <p>Qualquer preço</p>
-            <p>Faixa de preço</p>
+            <p>Fixo<input  class="radio" type="radio"></p>
+            <p>Mensal<input  class="radio" type="radio"></p>
+            <p class="seleciono">Qualquer preço</p>
+            <p class="seleciono">Faixa de preço</p>
             <div class="preco">
-                <input type="number" placeholder="min">
+                <input type="number" class="min" placeholder="min">
                 <p>-</p>
                 <input type="number" placeholder="max">
             </div>
         </div>
 
-        <div class="h2flutuante"><h2>Tempo de Contrato</h2></div>
+        <div class="h2flutuante"><h2>Duração</h2></div>
             <div class="filtrop">
-            <p>Indefinida</p>
-            <input  class="radio" type="radio">
-            <p>Tempo de mês</p>
-            <input  class="radio" type="radio">
+            <p>Indefinida<input  class="radio" type="radio"></p>
+            <p class="seleciono">Tempo em horas </p>
             <div class="preco">
-                <input type="number" placeholder="min">
+                <input type="number"  class="min"  placeholder="min">
                 <p>-</p>
                 <input type="number" placeholder="max">
             </div>
         </div>
 
-        <div class="aplicarfiltro"> 
-
-            <button><a href="">Aplicar</a></button>
+        <div class="aplicarfiltro">
+            <a href="">Aplicar</a>
         </div>
         <div class="limparfiltro">
             <p>Limpar filtros</p>
@@ -111,6 +107,7 @@
         <div class="cursos">
             <div class="curso">
                 <img src="img/design1.webp" alt="">
+                <p id="tempo0"><span>48 horas</span></p>
                     <div class="cursoinfo">                        
                             <h2>Cursos de Design</h1><p>R$23,00/mês</p>
                     </div>
@@ -118,14 +115,9 @@
                         <p>José Antônio</p>
                     </div>
             </div>
-            <div class="tempodecurso">
-
-               <p class="temp">48Horas</p>
-
-            </div>
-
             <div class="curso">
                 <img src="img/design1.webp" alt="">
+                <p id="tempo1"><span>48 horas</span></p>
                     <div class="cursoinfo">                        
                             <h2>Cursos de Design</h1><p>R$23,00/mês</p>
                     </div>
@@ -136,6 +128,7 @@
 
             <div class="curso">
                 <img src="img/design1.webp" alt="">
+                <p id="tempo2"><span>48 horas</span></p>
                     <div class="cursoinfo">                        
                             <h2>Cursos de Design</h1><p>R$23,00/mês</p>
                     </div>
@@ -146,6 +139,7 @@
 
             <div class="curso">
                 <img src="img/design1.webp" alt="Foto de Perfil">
+                <p id="tempo3"><span>48 horas</span></p>
                     <div class="cursoinfo">                        
                             <h2>Cursos de Design</h1><p>R$23,00/mês</p>
                     </div>
