@@ -423,11 +423,17 @@ footer{
     background-color: var(--preto);
     color: var(--brancoBase);
     padding: 1rem;
-    border: 0.325rem solid transparent;
+    border: 0.365rem solid transparent ;
     border-image: linear-gradient(-90deg, rgb(75, 15, 110)0%, rgb(45, 100, 240)100%) 1;
 }
-
+.close{
+    position: absolute;
+    left: 98.5%;
+    top: 0%;
+}
 .botaoContratar{
+    width: 10rem;
+    border: none;
     padding: 1rem;
     color: var(--brancoBase);
     font-weight: 700;
@@ -448,7 +454,7 @@ footer{
 }
 
 .modal-nav{
-    margin: 1rem;
+    margin: 0rem;
     gap: 0.5rem;
 }
 
@@ -476,7 +482,7 @@ footer{
 .close{
     color: var(--brancoBase);
     float: right;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -485,7 +491,13 @@ footer{
     text-decoration: none;
     cursor: pointer;
 }
-
+.perfilPort{
+    display: flex;
+}
+.perfilPort p{
+    font-weight: 400;
+    font-size: 1rem;
+}
 /*---------------------------------------------------------------------------*/
 /*-------------------------------- Vagas CSS --------------------------------*/
 /*---------------------------------------------------------------------------*/
@@ -493,6 +505,7 @@ footer{
 /*-------------------------------- Main prVagas -----------------------------*/
 
 .prVagas{
+    margin-top: 9rem;
     height: 60rem;
     display: flex;
 }
@@ -545,6 +558,7 @@ footer{
 /*-------------------------------- Main Vagas --------------------------------*/
 
 .vaga{
+    position: relative;
     background-color: var(--cinzaBase);
     display: flex;
     height: 25rem;
@@ -585,8 +599,11 @@ footer{
 .infovaga h1{
     color: var(--azulBase);
 }
+.descvaga{
+    font-size: 25px;
 
-.infovaga .descvaga{
+}
+.infovaga .descvag{
     display: flex;
     flex-wrap: nowrap;
 }
@@ -603,14 +620,19 @@ footer{
     left: 10rem;
     position: absolute;
 }
-
-.respostavaga{
+.vaga .LocalB{
     position: absolute;
-    right: 26rem;
-    bottom: 24.9rem;
+    left: 80%;
+    top: 5%;
 }
 
-.respostavaga button{
+.respostavaga1{
+    position: absolute;
+    top: 85%;
+    left: 85%;
+}
+
+.respostavaga1 button{
     background: rgb(75,16,112);
     background: linear-gradient(-90deg, rgba(75,16,112,1) 0%, rgba(43,99,240,1) 100%);
     border: none;
@@ -621,13 +643,14 @@ footer{
     cursor: pointer;
 }
 
-.respostavaga button:hover{
-    background: none;
-    background-color: var(--azulBasee);
+.respostavaga1 button:hover{
+    background-image: none;
+    background-color: var(--brancoBase);
     border: none;
+    color: #000;
     border-radius: 0.8rem;
     padding: 0.6rem;
-    color: var(--brancoBase);cursor: pointer;
+    cursor: pointer;
 }
 
 .localvaga{
@@ -635,10 +658,10 @@ footer{
     padding: 1rem;
 }
 
-.horariovaga{
+.horariovaga1{
     position: absolute;
-    bottom: 24.9rem;
-    right: 76rem;
+    top: 87%;
+    right: 85%;
 }
 
 .selecionado{
@@ -653,10 +676,69 @@ footer{
 
 
 }
+.respostavaga2{
+    position: absolute;
+    top: 85%;
+    left: 85%;
+}
+.vaga .LocalB2{
+    position: absolute;
+    left: 80%;
+    top: 5%;
+}
+.respostavaga2 button{
+    background: rgb(75,16,112);
+    background: linear-gradient(-90deg, rgba(75,16,112,1) 0%, rgba(43,99,240,1) 100%);
+    border: none;
+    border-radius: 0.8rem;
+    padding: 0.6rem;
+    color: var(--brancoBase);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.respostavaga2 button:hover{
+    background-image: none;
+    background-color: var(--brancoBase);
+    border: none;
+    color: #000;
+    border-radius: 0.8rem;
+    padding: 0.6rem;
+    cursor: pointer;
+}
+.horariovaga2{
+    position: absolute;
+    top: 87%;
+    right: 85%;
+}
+.aplicarfiltrov a{
+    background-color: transparent; /* Cor de fundo */
+    color: #FFFFFF; /* Texto em branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    font-size: 16px; /* Tamanho do texto */
+    font-size: 2rem;
+    position: absolute;
+    left: 7rem;
+    top: 65.5rem;
+    color: var(--azulaplicar);
+}
+  
+.limparfiltrov{
+    font-family: "Manrope", sans-serif;
+    font-size: 1.2rem;
+    position: absolute;
+    top:68.8rem;
+    left: 7.7rem;
+}
 /*----------------------------------------------------------------------------*/
 /*-------------------------------- Cursos CSS --------------------------------*/
 /*----------------------------------------------------------------------------*/
-
+.curso{
+    position: relative;
+}
 .aplicarfiltro a{
     background-color: transparent; /* Cor de fundo */
     color: #FFFFFF; /* Texto em branco */
@@ -699,8 +781,8 @@ footer{
 }
 #tempo0{
     position: absolute;
-    top: 28%;
-    left: 41.3%;
+    top: 58%;
+    left: 84.3%;
     color: #fff;
     background-color: var(--azulBase);
     border-radius: 1rem;
@@ -715,8 +797,8 @@ footer{
 }
 #tempo1{
     position: absolute;
-    top: 28%;
-    left: 91.3%;
+    top: 58%;
+    left: 84.3%;
     color: #fff;
     background-color: var(--azulBase);
     border-radius: 1rem;
@@ -731,8 +813,8 @@ footer{
 }
 #tempo2{
     position: absolute;
-    top: 80%;
-    left: 41.3%;
+    top: 58%;
+    left: 84.3%;
     color: #fff;
     background-color: var(--azulBase);
     border-radius: 1rem;
@@ -747,8 +829,8 @@ footer{
 }
 #tempo3{
     position: absolute;
-    top: 80%;
-    left: 91.3%;
+    top: 58%;
+    left: 84.3%;
     color: #fff;
     background-color: var(--azulBase);
     border-radius: 1rem;
@@ -1102,6 +1184,118 @@ div .preco p{
 
 .entrargoogle{
       color:var(--preto);
+}
+/*---------------------------------- Ajuda ----------------------------------*/
+.migalha-de-pao{
+    margin: 1rem;
+}
+.AIndex{
+    color:#747474;
+    margin: 1rem;
+}
+.Ultimo{
+    color: #2B63F0;
+}
+.tituloA{
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tituloA h1{
+    font-size: 6rem;
+    color: #2B63F0;
+    text-shadow: -10px 4px 0 #0E0E0E;
+}
+.tituloA h2{
+    font-size: 2rem;
+    color: #818181;
+    margin: 1rem 0 3.5rem 0;
+}
+.Ausuario{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+.InfoUA{
+    margin-top: 9rem;
+}
+.InfoPA{
+    margin-top: 9rem;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+.InfoUA h1{
+    font-size: 4rem;
+    color: #2B63F0;
+    margin-bottom: 1rem;
+}
+.InfoUA p{
+    font-size: 2rem;
+}
+.Arte2{
+    position: absolute;
+    left: 68%;
+    top: 05%;
+}
+.InfoPA h1{
+    font-size: 4rem;
+    color: #2B63F0;
+    margin-bottom: 1rem;
+}
+.InfoPA p{
+    font-size: 2rem;
+    text-align: end;
+}
+.Arte3{
+    position: absolute;
+    top: 25%;
+}
+.InfoCursoVaga{
+    margin-top: 9rem;
+}
+.InfoCursoVaga h1{
+    font-size: 4rem;
+    color: #2B63F0;
+    margin-bottom: 1rem;
+}
+.InfoCursoVaga{
+    font-size: 2rem;
+}
+.Arte4{
+    position: absolute;
+    left: 62%;
+    top: 45%;
+}
+.InfoCA{
+    margin-top: 9rem;
+    margin-bottom: 10rem;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+.InfoCA h1{
+    font-size: 4rem;
+    color: #2B63F0;
+    margin-bottom: 1rem;
+}
+.InfoCA p{
+    font-size: 2rem;
+    text-align: end;
+}
+.Arte5{
+    position: absolute;
+    top: 75%;
+}
+.Arte5 img{
+    width: 77%;
+}
+.migalha-de-pao{
+    position: absolute;
+    top: 13%;
 }
 /*-------------------------------- Sobre nós --------------------------------*/
 .PrSobreNos{
