@@ -29,7 +29,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 a{
@@ -41,7 +40,7 @@ footer{
     align-content: center;
     align-items: center;
     margin: 2rem 0 0 0;
-    height: 22rem;
+    height: 11rem;
     background-color: #0E0E0E;
     color: white;
 }
@@ -51,13 +50,13 @@ footer{
     align-content: center;
 }
 .PrinFooter{
+    height: 8rem;
     align-items: center;
     margin: 1rem 2rem 0 2rem;
     display: flex;
     justify-content: space-around;
-   
-
 }
+
 .EndFooter{
     background-color: #0E0E0E;
     height: 2rem;
@@ -70,19 +69,19 @@ footer{
     border-top: solid white 0.4rem;
 }
 .Info{
+    height: 8rem;
     display: flex;
     flex-direction: row-reverse;
-    font-size: 2rem;
+    font-size: 1.8rem;
     border-left: solid white 0.4rem;
     border-right: solid white 0.4rem;
 
 }
 .Info a{
-    padding: 4rem;
+    padding: 1rem;
 }
 .logoFooter{
-
-    width: 25%;
+    width: 21%;
 }
 /*-------------------------------- Header inicio --------------------------------*/
 
@@ -287,7 +286,7 @@ footer{
     background-attachment: fixed;
     flex-wrap: wrap;
 }
-.gride >div{
+.gride > div{
     position: relative;
     background-color: #f0f0f0;
     overflow: hidden;
@@ -297,81 +296,79 @@ footer{
     align-items: center;
     cursor:pointer;
 }
-.gride > div .PortHover{
+.gride > div .portHover{
     position: absolute;
-            top: -100%;
-            left: 0;
-            width: 100%;
-            padding-left: 1rem;
-            height: 5rem;
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            transition: all 0.5s;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding-left: 1rem;
+    height: 5rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    transition: all 0.5s;
 }
-.gride >div .PortHover .like{
+.gride > div .portHover .like{
     display: flex;
     flex-direction: row;
     padding-left: 85%;
 }
 
-.gride >div .PortHover p img{
+.gride > div .portHover p img{
     height: 60%;
 }
-.gride > div:hover .PortHover{
+.gride > div:hover .portHover{
     top: 0;
 }
-.gride .filho1{
+.gride #filho1{
      background-image: url(img/img_port/1.jpg);
     background-size: cover;
     grid-area: f1;
     border-radius: 0.3rem;
-    
-
 }
-.gride .filho2{
+.gride #filho2{
     background-image: url(img/img_port/2.jpg);
     background-size: cover;
     grid-area: f2;
     border-radius: 0.3rem;
     
 }
-.gride .filho3{
+.gride #filho3{
     background-image: url(img/img_port/3.jpg);
     background-size: cover;
     grid-area: f3;
     border-radius: 0.3rem;
 }
-.gride .filho4{
+.gride #filho4{
     background-image: url(img/img_port/4.jpg);
     background-size: cover;
     grid-area: f4;
     border-radius: 0.3rem;
 }
 
-.gride .filho5{
+.gride #filho5{
     background-image: url(img/img_port/5.jpg);
     background-size: cover;
     grid-area: f5;
     border-radius: 0.3rem;
 }
-.gride .filho6{
+.gride #filho6{
     background-image: url(img/img_port/6.jpg);
     background-size: cover;
     grid-area: f6;
     border-radius: 0.3rem;
 }
-.gride .filho7{
+.gride #filho7{
     background-image: url(img/img_port/7.jpg);
     background-size: cover;
     grid-area: f7;
     border-radius: 0.3rem;
 }
 
-.gride .filho8{
+.gride #filho8{
     background-image: url(img/img_port/8.jpg);
     background-size: cover;
     grid-area: f8;
@@ -394,11 +391,106 @@ footer{
     border-bottom: 1px solid #0E0E0E;
 }
 
+/*------------------------------Modal Portifolio-----------------------------*/
+
+#modalPort{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.8);
+}
+  
+.modal-content{
+    position: relative;
+    background-color: var(--brancoBase);
+    margin: auto;
+    width: 80%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--preto);
+    color: var(--brancoBase);
+    padding: 1rem;
+    border: 0.325rem solid transparent;
+    border-image: linear-gradient(-90deg, rgb(75, 15, 110)0%, rgb(45, 100, 240)100%) 1;
+}
+
+.botaoContratar{
+    padding: 1rem;
+    color: var(--brancoBase);
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 1rem;
+    background-image: linear-gradient(-90deg, rgb(75, 15, 110)0%, rgb(45, 100, 240)100%);
+}
+
+.botaoContratar:hover{
+    background-image: linear-gradient(-90deg, rgb(90, 30, 125)0%, rgb(60, 115, 255)100%);
+}
+
+.modal-body{
+    display: flex;
+    gap: 2rem;
+    padding: 0.5rem 1rem;
+    height: auto;
+}
+
+.modal-nav{
+    margin: 1rem;
+    gap: 0.5rem;
+}
+
+.modal-nav button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: var(--brancoBase);
+    width: 4rem;
+}
+
+.modal-button{
+    width: 3rem;
+    height: auto;
+    margin: 0.5rem;
+}
+
+#modalImage{
+    width: 80%;
+}
+
+.close{
+    color: var(--brancoBase);
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus{
+    color: var(--cinzaBasec);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /*---------------------------------------------------------------------------*/
 /*-------------------------------- Vagas CSS --------------------------------*/
 /*---------------------------------------------------------------------------*/
 
-/*-------------------------------- Main prVagas --------------------------------*/
+/*-------------------------------- Main prVagas -----------------------------*/
 
 .prVagas{
     height: 60rem;
@@ -1041,4 +1133,3 @@ div .preco p{
     color: #2B63F0;
     text-shadow: -10px 4px 0 #0E0E0E;
 }
-

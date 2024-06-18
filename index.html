@@ -18,18 +18,20 @@
         
         <nav class="headerpag">
             <div class="selecionado">
-            <a href="index.html">Explorar</a>
+                <a href="index.html">Explorar</a>
             </div>
             <a href="cursos.html">Cursos</a>
             <a href="vagas.html">Vagas</a>
-            <div class="sobrenos"><a href="sobre.html">Sobre Nós</a></div>
+            <div class="sobrenos">
+                <a href="sobre.html">Sobre Nós</a>
+            </div>
         </nav>
 
         <div class="barrapesquisa">
-            <form method="post" action="">
+            <form method="get" action="">
                 <input type="text" name="busca" placeholder="Digite sua pesquisa">
             </form>
-             <button type="submit"><img src="img/search2.svg" alt="icon lupa"></button>
+            <button type="submit"><img src="img/search2.svg" alt="icon lupa"></button>
         </div>
 
         <nav class="headericon">
@@ -44,31 +46,59 @@
 
     <div class="fyy">
         <div class="pv">
-        <a href="">Para Você</a> 
+            <a href="">Para Você</a> 
         </div>
+
         <div class="seguindo">
-        <a href="">Seguindo</a>
+            <a href="">Seguindo</a>
         </div>
     </div>
 
     </section>
 
-    
     <main class="prIndex">
         
         <div class="gride">
-            <div class="filho1"><div class="PortHover"><H1>Portfólio teste</H1><p>Autor</p><p class="like">99%<img src="img/Vector.svg" alt="Like"></p></div></div>
-            <div class="filho2"><div class="PortHover"><H1>Portfólio teste</H1><p>Autor</p><p class="like">99%<img src="img/Vector.svg" alt="Like"></p></div></div>
-            <div class="filho3"><div class="PortHover"><H1>Portfólio teste</H1><p>Autor</p><p class="like">99%<img src="img/Vector.svg" alt="Like"></p></div></div>
-            <div class="filho4"><div class="PortHover"><H1>Portfólio teste</H1><p>Autor</p><p class="like">99%<img src="img/Vector.svg" alt="Like"></p></div></div>
-            <div class="filho5"><div class="PortHover"><H1>Portfólio teste</H1><p>Autor</p><p class="like">99%<img src="img/Vector.svg" alt="Like"></p></div></div>
-            <div class="filho6"><div class="PortHover"><H1>Portfólio teste</H1><p>Autor</p><p class="like">99%<img src="img/Vector.svg" alt="Like"></p></div></div>
-            <div class="filho7"><div class="PortHover"><H1>Portfólio teste</H1><p>Autor</p><p class="like">99%<img src="img/Vector.svg" alt="Like"></p></div></div>
-            <div class="filho8"><div class="PortHover"><H1>Portfólio teste</H1><p>Autor</p><p class="like">99%<img src="img/Vector.svg" alt="Like"></p></div></div>
+            <div class="portImg" id="filho1"><div class="portHover"><H1>Portfólio teste</H1><p>Autor</p><p class="like">99%<img src="img/Vector.svg" alt="Like"></p></div></div>
+            <div class="portImg" id="filho2"><div class="portHover"><H1>Portfólio teste</H1><p>Autor</p><p class="like">99%<img src="img/Vector.svg" alt="Like"></p></div></div>
+            <div class="portImg" id="filho3"><div class="portHover"><H1>Portfólio teste</H1><p>Autor</p><p class="like">99%<img src="img/Vector.svg" alt="Like"></p></div></div>
+            <div class="portImg" id="filho4"><div class="portHover"><H1>Portfólio teste</H1><p>Autor</p><p class="like">99%<img src="img/Vector.svg" alt="Like"></p></div></div>
+            <div class="portImg" id="filho5"><div class="portHover"><H1>Portfólio teste</H1><p>Autor</p><p class="like">99%<img src="img/Vector.svg" alt="Like"></p></div></div>
+            <div class="portImg" id="filho6"><div class="portHover"><H1>Portfólio teste</H1><p>Autor</p><p class="like">99%<img src="img/Vector.svg" alt="Like"></p></div></div>
+            <div class="portImg" id="filho7"><div class="portHover"><H1>Portfólio teste</H1><p>Autor</p><p class="like">99%<img src="img/Vector.svg" alt="Like"></p></div></div>
+            <div class="portImg" id="filho8"><div class="portHover"><H1>Portfólio teste</H1><p>Autor</p><p class="like">99%<img src="img/Vector.svg" alt="Like"></p></div></div>
         </div>
 
-        
+        <!--Início modal-->
+        <div id="modalPort">
+            <div class="modal-content">
+
+                <header class="modal-header">
+                    <img src="img/iconeperfil.svg" alt="Foto/Ícone de perfil">
+                    <div class="perfilPort">
+                        <h1>Protótipo de portifólio</h1>
+                        <p>Nome do criador • 0 seguidores</p>
+                    </div>
+                    <input class="botaoContratar" type="submit" value="Contratar">
+                    <span class="close">&times;</span>
+                </header>
+
+                <main class="modal-body">
+                    <img id="modalImage" alt="Imagem do Portfólio">
+                    <nav class="modal-nav">
+                        <button type="button"><img class="modal-button" src="img/coracao.svg" alt="Botão Favoritar">Favoritar</button>
+                        <button type="button"><img class="modal-button" src="img/ferramenta.svg" alt="Botão Ferramenta">Ferramentas</button>
+                        <button type="button"><img class="modal-button" src="img/comentario.svg" alt="Botão Comentários">Comentários</button>
+                        <button type="button"><img class="modal-button" src="img/compartilhar.svg" alt="Botão Compartilhar">Compartilhar</button>
+                    </nav>
+                </main>
+
+            </div>
+        </div>
+        <!--Fim modal-->
+
     </main>
+
     <footer>
         <div class="PrinFooter">
         <div class="logoFooter">
@@ -89,6 +119,8 @@
             <p>Todos os direitos reservados. ©Seek 2024</p>
         </div>
     </footer>
+
+    <script src="index.js"></script>
     
 </body>
 </html>
