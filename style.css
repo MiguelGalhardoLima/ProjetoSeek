@@ -505,7 +505,7 @@ footer{
 /*-------------------------------- Main prVagas -----------------------------*/
 
 .prVagas{
-    margin-top: 4rem;
+    margin-top: 9rem;
     height: 60rem;
     display: flex;
 }
@@ -1268,7 +1268,7 @@ div .preco p{
 .Arte4{
     position: absolute;
     left: 62%;
-    top: 45%;
+    top: 51%;
 }
 .InfoCA{
     margin-top: 9rem;
