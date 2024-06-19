@@ -75,3 +75,9 @@ function trocarBanner() {
 
 trocarBanner();
 setInterval(trocarBanner, 8000);
+
+//Script para redirecionar para a página principal
+function login(event) {
+    event.preventDefault();
+    window.location.href = "index.html";
+}
