@@ -279,9 +279,9 @@ footer{
     border-radius: 0.6rem;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 20rem 20rem 20rem;
-    grid-template-areas: "f1 f2 f3 f4"
+    grid-template-areas: "f1 f6 f3 f8"
                          "f5 f6 f7 f8"
-                         "f5 f6 f7 f8";
+                         "f5 f2 f7 f4";
     background-repeat: no-repeat;
     background-attachment: fixed;
     flex-wrap: wrap;
@@ -324,55 +324,55 @@ footer{
     top: 0;
 }
 .gride #filho1{
-     background-image: url(img/img_port/1.jpg);
+     background-image: url(img/img_port/portIndx/1.jpg);
     background-size: cover;
     grid-area: f1;
-    border-radius: 0.3rem;
+    border-radius: 1.8rem;
 }
 .gride #filho2{
-    background-image: url(img/img_port/2.jpg);
+    background-image: url(img/img_port/portIndx/2.jpg);
     background-size: cover;
     grid-area: f2;
-    border-radius: 0.3rem;
+    border-radius: 1.8rem;
     
 }
 .gride #filho3{
-    background-image: url(img/img_port/3.jpg);
+    background-image: url(img/img_port/portIndx/3.jpg);
     background-size: cover;
     grid-area: f3;
-    border-radius: 0.3rem;
+    border-radius: 1.8rem;
 }
 .gride #filho4{
-    background-image: url(img/img_port/4.jpg);
+    background-image: url(img/img_port/portIndx/4.jpg);
     background-size: cover;
     grid-area: f4;
-    border-radius: 0.3rem;
+    border-radius: 1.8rem;
 }
 
 .gride #filho5{
-    background-image: url(img/img_port/5.jpg);
+    background-image: url(img/img_port/portIndx/5.jpg);
     background-size: cover;
     grid-area: f5;
-    border-radius: 0.3rem;
+    border-radius: 1.8rem;
 }
 .gride #filho6{
-    background-image: url(img/img_port/6.jpg);
+    background-image: url(img/img_port/portIndx/6.jpg);
     background-size: cover;
     grid-area: f6;
-    border-radius: 0.3rem;
+    border-radius: 1.8rem;
 }
 .gride #filho7{
-    background-image: url(img/img_port/7.jpg);
+    background-image: url(img/img_port/portIndx/7.jpg);
     background-size: cover;
     grid-area: f7;
-    border-radius: 0.3rem;
+    border-radius: 1.8rem;
 }
 
 .gride #filho8{
-    background-image: url(img/img_port/8.jpg);
+    background-image: url(img/img_port/portIndx/8.jpg);
     background-size: cover;
     grid-area: f8;
-    border-radius: 0.3rem;
+    border-radius: 1.8rem;
 }
 .prIndex .img3{
     display: flex;
@@ -505,7 +505,7 @@ footer{
 /*-------------------------------- Main prVagas -----------------------------*/
 
 .prVagas{
-    margin-top: 9rem;
+    margin-top: 4rem;
     height: 60rem;
     display: flex;
 }
@@ -919,6 +919,7 @@ div .preco p{
 }
 
 .cursos .curso{
+    position: relative;
     background-color: var(--cinzaBasec);
     height: calc(100% / 2 - 2rem);
     width: calc(100% / 2 - 2rem);
@@ -928,13 +929,12 @@ div .preco p{
     border-radius: 1rem;
 }
 
-.cursos .curso img{
+.cursos .curso > img{
     height: 70%;
     width: 100%;
     object-fit: cover;
     border-radius: 0.4rem;
 }
-
 .cursos .curso .cursoinfo{
     padding: 0.5rem 0.5rem;
     display: flex;
@@ -958,7 +958,18 @@ div .preco p{
     display: flex;
     align-items: center;
 }
+.cursoinfop{
+    position: relative;
+}
+    
 
+.cursoinfop .curtir{
+    position: absolute;
+    height:75%;
+    left: 90%;
+    
+
+}
 /*---------------------------------------------------------------------------*/
 /*-------------------------------- Login CSS --------------------------------*/
 /*---------------------------------------------------------------------------*/
@@ -994,10 +1005,11 @@ div .preco p{
     left: 13%;
     top: 35%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
     color: var(--brancoBase);
     height: 30%;
-    width: 40%;
+    width: 63%;
     gap: 1rem;
 }
 
@@ -1008,7 +1020,11 @@ div .preco p{
 }
 
 .logologin h1{
-    font-size: 600%;
+    position: absolute;
+    top: 70%;
+    left: 24%;
+    font-size: 1.5rem;
+    text-shadow: 4px 4px 5px #000;
 }
 
 .form-container{
@@ -1204,9 +1220,9 @@ div .preco p{
     justify-content: center;
 }
 .tituloA h1{
-    font-size: 6rem;
+    font-weight: 900;
+    font-size: 7rem;
     color: #2B63F0;
-    text-shadow: -10px 4px 0 #0E0E0E;
 }
 .tituloA h2{
     font-size: 2rem;
@@ -1325,5 +1341,4 @@ div .preco p{
 .sobreNos h1{
     font-size: 6rem;
     color: #2B63F0;
-    text-shadow: -10px 4px 0 #0E0E0E;
 }
