@@ -21,7 +21,6 @@
 
     --roxoc: rgb(172, 161, 210);
 
-    --azulaplicar: #2B63F0;
 }
 
 *{
@@ -712,25 +711,23 @@ footer{
     right: 85%;
 }
 .aplicarfiltrov a{
-    background-color: transparent; /* Cor de fundo */
+    background-color: var(--azulBase); /* Cor de fundo */
     color: #FFFFFF; /* Texto em branco */
     padding: 10px 20px; /* Espaçamento interno */
     border: none; /* Sem borda */
     border-radius: 5px; /* Borda arredondada */
     cursor: pointer; /* Cursor de mão ao passar o mouse */
-    font-size: 16px; /* Tamanho do texto */
-    font-size: 2rem;
+    font-size: 1rem; /* Tamanho do texto */
     position: absolute;
-    left: 7rem;
-    top: 60.5rem;
-    color: var(--azulaplicar);
+    left: 8rem;
+    top: 59rem;
 }
   
 .limparfiltrov{
     font-family: "Manrope", sans-serif;
     font-size: 1.2rem;
     position: absolute;
-    top:63.8rem;
+    top: 62rem;
     left: 7.7rem;
 }
 /*----------------------------------------------------------------------------*/
@@ -740,18 +737,16 @@ footer{
     position: relative;
 }
 .aplicarfiltro a{
-    background-color: transparent; /* Cor de fundo */
+    background-color: var(--azulBase); /* Cor de fundo */
     color: #FFFFFF; /* Texto em branco */
     padding: 10px 20px; /* Espaçamento interno */
     border: none; /* Sem borda */
     border-radius: 5px; /* Borda arredondada */
     cursor: pointer; /* Cursor de mão ao passar o mouse */
-    font-size: 16px; /* Tamanho do texto */
-    font-size: 2rem;
+    font-size: 1rem; /* Tamanho do texto */
     position: absolute;
-    left: 7rem;
+    left: 8rem;
     top: 56.5rem;
-    color: var(--azulaplicar);
 }
   
 .limparfiltro{
