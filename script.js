@@ -1,9 +1,62 @@
 // Sistema de validação de senha
+var psw1 = document.getElementById("password1");
 var psw = document.getElementById("password");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
 var number = document.getElementById("number");
 var length = document.getElementById("length");
+
+// Função quando o usuário clica dentro do campo de senha
+psw1.onfocus = function() {
+    document.getElementById("aviso1").style.display = "block";
+}
+
+// Funçao quando o usuário clica fora do campo de senha
+psw1.onblur = function() {
+    document.getElementById("aviso1").style.display = "none";
+}
+
+// Função quando o usuário começa a digitar
+psw1.onkeyup = function() {
+    // Validar letras minúsculas
+    var lowerCaseLetters = /[a-z]/g;
+    if(psw1.value.match(lowerCaseLetters)) {  
+        letter.classList.remove("invalid");
+        letter.classList.add("valid");
+    } else {
+        letter.classList.remove("valid");
+        letter.classList.add("invalid");
+    }
+
+    // Validar letras maiúsculas
+    var upperCaseLetters = /[A-Z]/g;
+    if(psw1.value.match(upperCaseLetters)) {  
+        capital.classList.remove("invalid");
+        capital.classList.add("valid");
+    } else {
+        capital.classList.remove("valid");
+        capital.classList.add("invalid");
+    }
+
+    // Validar números
+    var numbers = /[0-9]/g;
+    if(psw1.value.match(numbers)) {  
+        number.classList.remove("invalid");
+        number.classList.add("valid");
+    } else {
+        number.classList.remove("valid");
+        number.classList.add("invalid");
+    }
+
+    // Validar número de caracteres
+    if(psw1.value.length >= 8) {
+        length.classList.remove("invalid");
+        length.classList.add("valid");
+    } else {
+        length.classList.remove("valid");
+        length.classList.add("invalid");
+    }
+}
 
 // Função quando o usuário clica dentro do campo de senha
 psw.onfocus = function() {

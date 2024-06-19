@@ -1075,7 +1075,7 @@ div .preco p{
 }
 
 .sign-up-content h1, .sign-up-content h2{
-    color: var(--azulBase);
+    color: black;
 }
 
 .contaBotao{
@@ -1127,7 +1127,10 @@ div .preco p{
 }
 
 /*------Sistema de validação da senha------*/
-
+#aviso1{
+    display: none;
+    position: relative;
+}
 #aviso{
     display: none;
     position: relative;
