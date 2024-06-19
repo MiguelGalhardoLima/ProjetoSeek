@@ -48,6 +48,11 @@ footer{
     align-items: center;
     align-content: center;
 }
+.contatos img{
+    height: 10%;
+    width: 10%;
+
+}
 .PrinFooter{
     height: 8rem;
     align-items: center;
@@ -729,6 +734,7 @@ footer{
     position: absolute;
     top: 62rem;
     left: 7.7rem;
+    cursor: pointer;
 }
 /*----------------------------------------------------------------------------*/
 /*-------------------------------- Cursos CSS --------------------------------*/
@@ -755,7 +761,9 @@ footer{
     position: absolute;
     top:59.8rem;
     left: 7.6rem;
+    cursor: pointer;
 }
+
 .filtrop p{
     width: 25rem;
     display: flex;
