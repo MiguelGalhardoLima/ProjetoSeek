@@ -1004,21 +1004,25 @@ div .preco p{
 }
 
 .logologin img{
-    object-fit: cover;
-    overflow: hidden;
     height: 80%;
+    overflow: hidden;
 }
 
 .logologin h1{
     position: absolute;
     top: 70%;
     left: 24%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-shadow: 4px 4px 5px #000;
+}
+.ajudaicon{
+    position: absolute;
+    top: 90%;
+    left: 95%;
 }
 
 .form-container{
-    width: 20rem;
+    width: 25rem;
     height: 36rem;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -1177,14 +1181,20 @@ div .preco p{
 }
 
 .sign-up-link{
+    border:none;
+    outline: none;
     font-size: 0.75rem;
     text-decoration: underline;
     text-decoration-color: var(--azulBase);
     color: var(--azulBase);
     cursor: pointer;
     font-weight: 800;
+    transition: all 0.5s;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
           "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
+}
+.sign-up-link:hover{
+    color: #000;
 }
 
 .page-link-label {
