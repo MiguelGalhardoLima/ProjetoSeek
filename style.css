@@ -48,11 +48,6 @@ footer{
     align-items: center;
     align-content: center;
 }
-.contatos img{
-    height: 10%;
-    width: 10%;
-
-}
 .PrinFooter{
     height: 8rem;
     align-items: center;
@@ -397,11 +392,11 @@ footer{
 
 /*------------------------------Modal Portifolio-----------------------------*/
 
-#modalPort{
+#modalPort, .sign-up-modal{
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 8rem;
     left: 0;
     top: 0;
     width: 100%;
@@ -410,8 +405,8 @@ footer{
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.8);
 }
-  
-.modal-content{
+
+.modal-content, .sign-up-content{
     position: relative;
     background-color: var(--brancoBase);
     margin: auto;
@@ -430,11 +425,7 @@ footer{
     border: 0.365rem solid transparent ;
     border-image: linear-gradient(-90deg, rgb(75, 15, 110)0%, rgb(45, 100, 240)100%) 1;
 }
-.close{
-    position: absolute;
-    left: 98.5%;
-    top: 0%;
-}
+
 .botaoContratar{
     width: 10rem;
     border: none;
@@ -484,6 +475,9 @@ footer{
 }
 
 .close{
+    position: absolute;
+    left: 98%;
+    top: 0.5%;
     color: var(--brancoBase);
     float: right;
     font-size: 1.8rem;
@@ -734,7 +728,6 @@ footer{
     position: absolute;
     top: 62rem;
     left: 7.7rem;
-    cursor: pointer;
 }
 /*----------------------------------------------------------------------------*/
 /*-------------------------------- Cursos CSS --------------------------------*/
@@ -761,9 +754,7 @@ footer{
     position: absolute;
     top:59.8rem;
     left: 7.6rem;
-    cursor: pointer;
 }
-
 .filtrop p{
     width: 25rem;
     display: flex;
@@ -896,14 +887,6 @@ div .preco p{
     gap: 1rem;
     width: 130%;
     margin: 0.3rem;
-}
-
-.preco input{
-    width: 100%;
-    background-color: var(--cinzaBase);
-    border: 1px solid var(--cinzaBasee);
-    padding: 0.3rem 0.5rem;
-    border-radius: 0.8rem;
 }
 
 /*-------------------------------- Main Cursos --------------------------------*/
@@ -1060,12 +1043,61 @@ div .preco p{
     margin-bottom: 1rem;
 }
 
-.input{
+.input, .contaBotao{
     border-radius: 20px;
     border: 1px solid #c0c0c0;
     outline: 0 !important;
     box-sizing: border-box;
     padding: 12px 15px;
+}
+
+.sign-up-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-container, .type-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0.5rem;
+    align-items: center;
+}
+
+.sign-up-container input{
+    width: 100%;
+}
+
+.type-container{
+    flex-direction: row;
+}
+
+.sign-up-content h1, .sign-up-content h2{
+    color: var(--azulBase);
+}
+
+.contaBotao{
+    background-color: var(--azulBase);
+    color: var(--brancoBase);
+    border: none;
+    cursor: pointer;
+}
+
+.sign-up-content{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.sign-up-content .close{
+    position: absolute;
+    top: 0%;
+    left: 87%;
+    color: var(--preto);
+    font-size: 3rem;
 }
 
 .page-link{
@@ -1171,7 +1203,7 @@ div .preco p{
     gap: 1rem;
 }
 
-.apple-login-button, .google-login-button {
+.apple-login-button, .google-login-button{
     border-radius: 1.5rem;
     box-sizing: border-box;
     padding: 0.75rem 1rem;

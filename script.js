@@ -26,7 +26,7 @@ psw.onkeyup = function() {
         letter.classList.remove("valid");
         letter.classList.add("invalid");
     }
-  
+
     // Validar letras maiúsculas
     var upperCaseLetters = /[A-Z]/g;
     if(psw.value.match(upperCaseLetters)) {  
@@ -46,7 +46,7 @@ psw.onkeyup = function() {
         number.classList.remove("valid");
         number.classList.add("invalid");
     }
-  
+
     // Validar número de caracteres
     if(psw.value.length >= 8) {
         length.classList.remove("invalid");
@@ -69,7 +69,7 @@ function trocarBanner() {
             imgBanner.src = banners[indiceBanner];
             indiceBanner = (indiceBanner + 1) % banners.length;
             imgBanner.style.opacity = 1;
-        }, 1000);
+        }, 500);
     }
 }
 
