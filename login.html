@@ -16,27 +16,16 @@
 
         <div class="logologin">
             <img src="img/Logo.svg" alt="Logo Seek">
-            <h1>Um site que ajuda artistas visuais a 
-            <br>exibir portfólios e conectar-se com empresas.</h1>
+            <h1>Portfólios e oportunidades de emprego</h1>
         </div>
-        <a class="ajudaicon" href="ajuda.html"><img src="img/Ajuda.svg" alt="ajuda"></a>
 
         <div class="form-container">
             <p class="title"> Entrar</p>
             <form class="form" method="post">
                 <input type="email" name="email" class="input" placeholder="Email" required>
-                <input type="password" id="password1" name="password" class="input" placeholder="Senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-                title="Deve conter pelo menos uma letra minúscula, uma letra maiúscula, um número e deve ter pelo menos 8 (OITO) caracteres." required>
-                <div id="aviso1">
-                    <p id="letter" class="invalid">Uma ou mais letra(s) <b>minúscula(s)</b></p>
-                    <p id="capital" class="invalid">Uma ou mais letras(s) <b>maiúscula(s)</b></p>
-                    <p id="number" class="invalid">Um ou mais <b>número(s)</b></p>
-                    <p id="length" class="invalid">Mínimo de <b>8 (oito) caracteres</b></p>
-                </div>
+                <input type="password" name="password" class="input" placeholder="Senha" required>
                 <button onclick="login(event)" class="form-btn">Entrar</button>
             </form>
-
-            
 
             <div class="buttons-container">
                 <div class="google-login-button">
@@ -88,13 +77,13 @@
                     
                     <h2>Tipo de conta</h2>
                     <div class="type-container">
-                        <input class="form-btn" type="submit" value="Professor">
-                        <input class="form-btn" type="submit" value="Padrão">
-                        <input class="form-btn" type="submit" value="Empresa">
+                        <button class="form-btn" type="submit">Professor</button>
+                        <button class="form-btn" type="submit">Padrão</button>
+                        <button class="form-btn" type="submit">Empresa</button>
                     </div>
                     
                     <div class="buttons-container">
-                        <button onclick="login(event)" class="form-btn">Cadastrar</button>
+                        <button onclick="login(event)" class="form-btn">Entrar</button>
                         <div class="google-login-button">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" x="0px" y="0px" class="google-icon" viewBox="0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12
