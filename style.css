@@ -48,6 +48,10 @@ footer{
     align-items: center;
     align-content: center;
 }
+.contatos img{
+    width: 10%;
+    height: 10%;
+}
 .PrinFooter{
     height: 8rem;
     align-items: center;
