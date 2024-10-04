@@ -1,0 +1,353 @@
+:root {
+    --cinzaBase: rgb(220, 220, 220);
+
+    --cinzaBasee: rgb(158, 158, 158);
+
+    --cinzaBasec: rgb(215, 214, 214);
+
+    --laranjaBase: rgb(228, 95, 16);
+
+    --brancoBase: rgb(255, 255, 255);
+
+    --preto: #0E0E0E;
+
+    --azulBase: #2B63F0;
+
+    --azulBasee: #00008b;
+
+    --azulBasec: rgb(116, 84, 233);
+
+    --roxobase: #942af1;
+
+    --roxoc: rgb(172, 161, 210);
+
+    --branco: #f3f3f3;
+
+    --vermelhom: #EF0000;
+
+
+
+    --ModoEscuroBase: #1F1F1F;
+    --ModoEscuroMesc: #656565;
+    --ModoEscuroMesc2: #555555;
+
+    --ModoEscuroFontV: #5AB3FF;
+    --ModoEscuroFontC: #E197FF;
+
+
+}
+
+/*-------------------------------- Modo Escuro --------------------------------*/
+
+.modoEscuro {
+    color: var(--brancoBase);
+    background-color:var(--ModoEscuroBase);
+}
+
+.modoEscuro .filtroflutuante{
+   
+    background-color: var(--ModoEscuroFilt);
+    border: 1px solid rgb(27, 27, 27)
+    
+}
+
+.modoEscuro .campos .categorias, .modoEscuro .margimtop, .modoEscuro .campo p , .modoEscuro .indefi , .modoEscuro .temmes , .modoEscuro .presen , .modoEscuro .homee , .modoEscuro .limparfiltro a , .modoEscuro .caminhonavegaçãovagas a{
+    color: var(--brancoBase);
+}
+
+.modoEscuro .filtrar1200px{
+    background-color: var(--ModoEscuroMesc);
+}
+
+.modoEscuro p.filtrar , .modoEscuro h1 , .modoEscuro .filtroflutuante h2, .modoEscuro .aplicar a , .modoEscuro .filtrar1200px{
+    color: var(--ModoEscuroFontV)
+}
+
+.modoEscuro .linhahabi , .modoEscuro .duracao , .modoEscuro .loc{
+    border-bottom: var(--ModoEscuroFontV) 1px solid;
+}
+
+/*-------------------------------- Modo Escuro fim--------------------------------*/
+
+
+
+
+.caminhonavegaçãovagas a{
+    color: black;
+}
+.caminhonavegaçãovagas{
+    margin: 2rem;
+    display: flex;
+    width: 100%;
+}
+                                          /* Main */
+.prCursos{
+    height: 60rem;
+    display: flex;
+}
+.filtroflutuante{
+
+    background-color: var(--branco);
+    margin-top: 1rem;
+    height: 80vh;
+    width: 20%;
+    border-radius: 2rem;
+    padding: 3rem;
+    margin-left: 1rem;
+}
+
+.camposdecriacaovagas{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.habilidadesvagas{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.precominmax{
+    display: flex;
+    border: none;
+    width: 20%;
+}
+.divinputpreco{
+    display: none;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5rem;
+}
+.duracaovagas{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.localvagas{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.titulosfiltroflutuante{
+    color: var(--azulBase);
+    border-bottom: 1.5px solid var(--azulBase);
+}
+.filtroflutuante img{
+    width: 50px;
+}
+.titulofiltroflutuante{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+}
+.titulofiltroflutuante h2{
+    font-size: 2.5rem;
+    color: var(--azulBase);
+}
+.aplicarfiltrovagas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+.aplicarfiltrovagas button{
+    background-color: transparent;
+    color: var(--azulBase);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.limparfiltrovagas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.limparfiltrovagas button{
+
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+.setaoneoffvagas img{
+    width: 15px;
+}
+.setaoneoffvagas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+/*fim do filtar e começo do container*/
+.vagasvagas{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+    margin-left: 2rem;
+}
+.mainvagas{
+    display: flex;
+
+}
+.containervagas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    margin-left: 2rem;
+    padding: 1rem;
+    gap: 1rem;
+}
+.vagas{
+    height: 20rem; /* se colocar em 23rem não buga em 1500px*/
+    padding: 1rem;
+    background-color: var(--cinzaBasec);
+}
+
+.vagas img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.nomevagaehoradapostagem{
+    margin: 0.5rem;
+    height: 100%;
+}
+
+.nomevagaehoradapostagem p{
+    gap: 1.5rem;
+}
+.informacoesvagas{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 1rem;
+    height: 30%;
+}
+.botaoenviarproposta{
+    margin-right: 1.5rem;
+    border: none;
+}
+.botaoenviarproposta button{
+    background-color: var(--azulBase);
+    color: var(--brancoBase);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+.botaoenviarproposta button:hover{
+    background-color: var(--azulBasees);
+}
+.mmoreinfo a{
+    color: var(--azulBase);
+}
+/* css para a caixa flutuante */
+
+.caixaflutuante {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--branco);
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--preto);
+    z-index: 9999;
+    width: 45rem;
+    height: 30rem;
+    gap: 1rem;
+}
+
+.localdavaga {
+    display: flex;
+    justify-content: end;
+}
+
+.imagemdavaga {
+    height: 15rem;
+    border-radius: 10px;
+}
+
+.imagemdavaga img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.informaçõessobreavaga {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 5rem;
+}
+
+.discriçãodavaga {
+    height: 3rem;
+}
+
+.tema {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tema h2 {
+    font-size: 1.5rem;
+    color: var(--azulBase);
+}
+.horariodapostagemmoreinfoenviarprop {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.horariodapostagemmoreinfoenviarprop button {
+    background-color: var(--azulBase);
+    color: var(--branco);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.horariodapostagemmoreinfoenviarprop button:hover {
+    background-color: var(--azulBasee);
+}
+.horariodapostagemmoreinfoenviarprop a {
+    color: var(--azulBase);
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.mmoreinfo button{
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--azulBase);
+
+}
