@@ -1,196 +1,400 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seek - Cursos</title>
-    <link rel="stylesheet" href="style.css">
-    <link  type="imagex/png" href="img/logoSeekk.svg" rel="shortcut icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="cake.js" async defer></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cursos.css">
 </head>
-<body>
 
-    <header class="inicio">
+<body id="todo">
+  <header class="inicio">
 
-        <div class="logoo">
-            <img src="img/Logo.svg" alt="logo do site Seek, Sua aparencia é de um circulo feito de triangulos com cores frias como varios tons de azul e roxo, formando um olho similar a uma camera quando se retrai">
+
+    <button class="botaoMenu" id="botaoMenu">
+      <span class="linha1"></span>
+      <span class="linha2"></span>
+      <span class="linha3"></span>
+    </button>
+
+    <div class="logosite">
+      <img src="img/logo.svg" alt="Logo Seek">
+    </div>
+
+    <div class="userhover"><img src="img/user2.svg" alt=""></div>
+
+    <nav class="navsite">
+      <div id="headerexplurar" class="navSelecionado">
+        <a href="index.html" class="ExpA">Explorar</a>
+      </div>
+      <div id="headercursos" class="">
+        <a href="cursos.html" class="CurA">Cursos</a>
+      </div>
+      <div id="headervagas" class="">
+        <a href="vagas.html" class="VagA">Vagas</a>
+      </div>
+      <div class="sobrenoss"><a href="sobre.html" class="SobA">Sobre Nós</a></div>
+    </nav>
+
+    <div class="pesquisasite">
+      <input type="text" placeholder="Pesquisar">
+      <a href=""><img src="img/search2.svg" alt=""></a>
+    </div>
+
+    <div class="usersite">
+      <a href=""><img src="img/bell2.svg" alt=""></a>
+      <a href="login.html"><img src="img/user2.svg" alt=""></a>
+
+      <button id="abrirmenuperfil" onclick="abrirMenu()">teste menu perfil</button>
+
+
+
+    </div>
+    <nav class="hamburguer" id="menu">
+      <a class="botoesmenuhamburguer" href="index.html" class="ExpA">Explorar</a>
+      <a class="botoesmenuhamburguer" href="cursos.html" class="CurA">Cursos</a>
+      <a class="botoesmenuhamburguer" href="vagas.html" class="VagA">Vagas</a>
+      <a class="botoesmenuhamburguer" href="sobre.html" class="SobA">Sobre Nós</a>
+    </nav>
+
+
+
+
+    <div id="menuperfil" class="menuperfil">
+  
+      <a href="" class="Perf">Meu Perfil</a>
+      <a href="config.html" class="Conf">Configurações</a>
+      <p class="tema">Tema</p>
+  <label class="switch">
+      <input onclick="MudarModos()" type="checkbox">
+      <span class="slider"></span>
+  </label>
+      <!-- <div>
+        <button onclick="MudarModos()">Sol/lua</button>
+      </div> -->
+      <button id="sairdomenuperfil" class="sairP">Sair</button>
+  
+  
+    </div>
+  </header>
+
+  <div class="caminhonavegaçãocursos">
+    <a href="index.html">Explorar ></a> <a class="migalhadepaocursos" href="">Cursos</a>
+
+    <button onclick="ModoEscuro()">lua</button>
+    <button onclick="ModoClaro()">sol</button>
+  </div>
+
+  <main>
+    <div class="maincursos">
+      <div class="filtroflutuante">
+        <div class="titulofiltroflutuante">
+          <img src="img/Filtrar2roxo.svg" alt="">
+          <h2>Filtar</h2>
         </div>
+        <div class="tiposdecursoscursos">
+          <h2 class="titulosfiltroflutuante">Tipos de curso</h2>
+          <label for="">
+            Design <input type="radio" name="" id="radio1">
+          </label>
+          <label for="">
+            Ilustração <input type="radio" name="" id="radio2">
+          </label>
+          <label for="">
+            Fotográfia <input type="radio" name="" id="radio3">
+          </label>
+        </div>
+
+        <div class="precocursos">
+          <h2 class="titulosfiltroflutuante">Preço</h2>
+
+          <label for="">
+            Fixo <input type="radio" name="" id="radio4">
+          </label>
+          <label for="">
+            Mensal <input type="radio" name="" id="radio5">
+          </label>
+          <div class="setaoneoffcursos">
+            <p>Faixa de preco</p>
+            <img id="setapreco" onclick="setapreco()" src="img/setaparabaixo.svg" alt="">
+          </div>
+          <div id="faixadeprecocursos" class="faixadeprecocursos">
+
+            <input class="precominmax" type="number" name="" id="" placeholder="min">
+            <p>-</p>
+            <input class="precominmax" type="number" name="" id="" placeholder="max">
+
+          </div>
+
+        </div>
+
+        <div class="duracaocursos">
+          <h2 class="titulosfiltroflutuante">Duração</h2>
+
+          <label for="">
+            Indefinida <input type="radio" name="" id="radio6">
+          </label>
+          <div class="setaoneoffcursos">
+            <p>Tempo em horas</p>
+            <img id="seta" onclick="seta()" src="img/setaparabaixo.svg" alt="">
+
+          </div>
+          <div id="divinputpreco" class="divinputpreco">
+            <input class="precominmax" type="number" name="" id="" placeholder="min">
+            <p>-</p>
+            <input class="precominmax" type="number" name="" id="" placeholder="max">
+          </div>
+
+        </div>
+
+        <div class="localcursos">
+          <h2 class="titulosfiltroflutuante">Local</h2>
+
+          <label for="">
+            Presencial <input type="radio" name="" id="radio7">
+          </label>
+          <label for="">
+            Home office <input type="radio" name="" id="radio8">
+          </label>
+
+        </div>
+
+
+        <div class="aplicarfiltrocursos">
+
+          <button>Aplicar</button>
+
+        </div>
+
+        <div class="limparfiltrocursos">
+
+          <button type="button" onclick="desmarcarRadio()">Limpar filtro</button>
+
+        </div>
+
+
+
+
+
+
+      </div>
+
+      <div class="alinharadiv">
+        <div class="botaofiltrarcursosmedia">
+
+          <button onclick="abrirfiltro()"> <img src="img/Filtrar2.svg" alt=""> Filtrar</button>
+
+        </div>
+      </div>
+
+      <div class="containercursos">
+
+        <button onclick="abrircaixaflutuantecursos()" class="botaocaixacursos"><div class="cursos">
+          <img src="img/imagemtestecurso.png" alt="">
+          <div class="informacoescursos">
+            <div class="nomedocursoedoautor">
+              <h2>Nome do curso</h2>
+              <p>José Antonio</p>
+            </div>
+            <div class="valordocursoebotaofavorito">             
+              <p>R$ 23,00/mês</p>
+              <img src="img/heart.svg" alt="">
+            </div>
+          </div>
+        </div></button>
+        <button onclick="abrircaixaflutuantecursos()" class="botaocaixacursos"><div class="cursos">
+          <img src="img/imagemtestecurso.png" alt="">
+          <div class="informacoescursos">
+            <div class="nomedocursoedoautor">
+              <h2>Nome do curso</h2>
+              <p>José Antonio</p>
+            </div>
+            <div class="valordocursoebotaofavorito">             
+              <p>R$ 23,00/mês</p>
+              <img src="img/heart.svg" alt="">
+            </div>
+          </div>
+        </div></button>
+        <button onclick="abrircaixaflutuantecursos()" class="botaocaixacursos"><div class="cursos">
+          <img src="img/imagemtestecurso.png" alt="">
+          <div class="informacoescursos">
+            <div class="nomedocursoedoautor">
+              <h2>Nome do curso</h2>
+              <p>José Antonio</p>
+            </div>
+            <div class="valordocursoebotaofavorito">             
+              <p>R$ 23,00/mês</p>
+              <img src="img/heart.svg" alt="">
+            </div>
+          </div>
+        </div></button>
+        <button onclick="abrircaixaflutuantecursos()" class="botaocaixacursos"><div class="cursos">
+          <img src="img/imagemtestecurso.png" alt="">
+          <div class="informacoescursos">
+            <div class="nomedocursoedoautor">
+              <h2>Nome do curso</h2>
+              <p>José Antonio</p>
+            </div>
+            <div class="valordocursoebotaofavorito">             
+              <p>R$ 23,00/mês</p>
+              <img src="img/heart.svg" alt="">
+            </div>
+          </div>
+        </div></button>
+        <button onclick="abrircaixaflutuantecursos()" class="botaocaixacursos"><div class="cursos">
+          <img src="img/imagemtestecurso.png" alt="">
+          <div class="informacoescursos">
+            <div class="nomedocursoedoautor">
+              <h2>Nome do curso</h2>
+              <p>José Antonio</p>
+            </div>
+            <div class="valordocursoebotaofavorito">             
+              <p>R$ 23,00/mês</p>
+              <img src="img/heart.svg" alt="">
+            </div>
+          </div>
+        </div></button>
+        <button onclick="abrircaixaflutuantecursos()" class="botaocaixacursos"><div class="cursos">
+          <img src="img/imagemtestecurso.png" alt="">
+          <div class="informacoescursos">
+            <div class="nomedocursoedoautor">
+              <h2>Nome do curso</h2>
+              <p>José Antonio</p>
+            </div>
+            <div class="valordocursoebotaofavorito">             
+              <p>R$ 23,00/mês</p>
+              <img src="img/heart.svg" alt="">
+            </div>
+          </div>
+        </div></button>
         
-        <nav class="headerpag">
-            <a href="index.html">Explorar</a>
-                <a href="cursos.html">Cursos</a>
-            <a href="vagas.html">Vagas</a>
-            <div class="sobrenos"><a href="sobre.html">Sobre Nós</a></div>
-        </nav>
-
-        <div class="barrapesquisa">
-            <form method="post" action="">
-                <input type="text" name="busca" placeholder="Digite sua pesquisa">
-            </form>
-             <button type="submit"><img src="img/search2.svg" alt="icone de busca com aparencia de uma lupa branca"></button>
-        </div>
-
-        <nav class="headericon">
-        <a href=""><img src="img/mail-1.svg" alt=" botão de mensagens com aparência de um envelope fechado branco"></a>
-        <a href=""><img src="img/bell2.svg" alt="botão de notificações com aparência de um sino branco"></a>
-        <a href="login.html"><img src="img/user2.svg" alt=" botão para configurações de usuário ou registro"></a>
-        </nav>
-
-        <nav  id="menu">
-           
-            <a class="botoesmenuhamburguer" href="index.html">Explorar</a>
-            <a class="botoesmenuhamburguer" href="cursos.html">Cursos</a>
-            <a class="botoesmenuhamburguer" href="vagas.html">Vagas</a>
-            <a class="botoesmenuhamburguer" href="sobre.html">Sobre Nós</a>  
         
-        </nav>
 
-        <button class="botaoMenu" id="botaoMenu">
-            <span class="linha1"></span>
-            <span class="linha2"></span>
-            <span class="linha3"></span>
-        </button>
 
-    </header>
 
-    <section class="fy">
+      </div>
 
-        <!-- <div class="fyy">
-            <div class="filtro">
-            <button><img src="img/filter1.svg" alt="Filtrar"></button>
-            <button class="filtrar">Filtrar</button>
-            </div> -->
-        
-        </section>
+      <!-- <div class="containervagas">
 
-    <main class="prCursos">
-        <div class="migalha-de-pao">
-            <a class="AIndex" href="index.html">Home ><a class="Ultimo" href="cursos.html">Cursos</a></a>
+        <div class="vagas">
+          <img src="img/imagemtestecurso.png" alt="">
+          <div class="informacoesvagas">
+            <div class="nomevagaehoradapostagem">
+              <h2>Cursos de design</h2>
+              <p>José Antonio</p>
             </div>
-        <!-- INICIO DA ABA DE FILTROS -->
-        <section class="filtroflutuante">
-
-            <div class="fyy">
-                <div class="filtro">
-                <img src="img/Filtrar2.svg" alt="Filtrar">
-                <p class="filtrar">Filtrar</p>
-                </div>
+            <div class="botaoenviarproposta">
+              <p>
+                R$ 23,00/mês
+              </p>
+              <img src="img/heart.svg" alt="">
             </div>
-
-        <div class="h2flutuante"><h2>Tipos de Cursos</h2></div>
-            <div class="filtrop">
-            <p>Designer<input  class="radio" type="radio"></p>
-            <p>Ilustrador<input  class="radio" type="radio"></p>
-            <p>Fotográfia<input  class="radio" type="radio"></p>
-
+          </div>
         </div>
 
-        <div class="h2flutuante"><h2>Preço</h2></div>
-            <div class="filtrop">
-            <p>Fixo<input  class="radio" type="radio"></p>
-            <p>Mensal<input  class="radio" type="radio"></p>
-            <p class="seleciono">Qualquer preço</p>
-            <p class="seleciono">Faixa de preço</p>
-            <div class="preco">
-                <input type="number" class="min" placeholder="min">
-                <p>-</p>
-                <input type="number" placeholder="max">
-            </div>
-        </div>
+      </div> -->
+    </div>
+    <div class="caixaflutuante">
+      <img src="../img/imagemtestecurso.png" alt="">
 
-        <div class="h2flutuante"><h2>Duração</h2></div>
-            <div class="filtrop">
-            <p>Indefinida<input  class="radio" type="radio"></p>
-            <p class="seleciono">Tempo em horas </p>
-            <div class="preco">
-                <input type="number"  class="min"  placeholder="min">
-                <p>-</p>
-                <input type="number" placeholder="max">
-            </div>
-        </div>
+      <div class="informacoescaixaflutuantecursos">
+          <div class="nomedocursoedoautor">
+              <h2>Curso de design</h2>
+              <p>Um curso feito por José Antonio</p>
+          </div>
+          <div class="valordocursoetempo">
 
-        <div class="aplicarfiltro">
-            <a href="">Aplicar</a>
-        </div>
-        <div class="limparfiltro">
-            <p>Limpar filtros</p>
-        </div>
-<!-- FIM DA ABA DE FILTROS -->
-        <div class="curso1">
-        <div class="cursos">
-            <div class="curso">
-                <img src="img/design1.webp" alt="">
-                <p id="tempo0"><span>48 horas</span></p>
-                    <div class="cursoinfo">                        
-                            <h2>Curso de Design</h1><p>R$23,00/mês</p>
-                    </div>
-                    <div class="cursoinfop">
-                        <p>José Antônio</p>
-                    <img class="curtir" src="img/coracao.svg" alt="Like">
-                    </div>
-            </div>
-            <div class="curso">
-                <img src="img/pexels-mikechie-esparagoza-749296-1601773.jpg" alt="">
-                <p id="tempo1"><span>48 horas</span></p>
-                    <div class="cursoinfo">                        
-                            <h2>Curso de Design</h1><p>R$23,00/mês</p>
-                    </div>
-                    <div class="cursoinfop">
-                        <p>José Antônio</p>
-                    <img class="curtir" src="img/coracao.svg" alt="Like">
-                    </div>
-            </div>
+              <h2>R$23,00/mês</h2>
+              <p>Tempo: 48horas</p>
 
-            <div class="curso">
-                <img src="img/banner-designer-grafico.png" alt="">
-                <p id="tempo2"><span>48 horas</span></p>
-                    <div class="cursoinfo">                        
-                            <h2>Curso de Design</h1><p>R$23,00/mês</p>
-                    </div>
-                    <div class="cursoinfop">
-                        <p>José Antônio</p> 
-                    <img class="curtir" src="img/coracao.svg" alt="Like">
-                    </div>
-            </div>
+          </div>
 
-            <div class="curso">
-                <img src="img/Foto-4-2-scaled.jpg" alt="Foto de Perfil">
-                <p id="tempo3"><span>48 horas</span></p>
-                    <div class="cursoinfo">                        
-                            <h2>Curso de Design</h1><p>R$23,00/mês</p>
-                    </div>
-                    <div class="cursoinfop">
-                        <p>José Antônio</p>
-                        <img class="curtir" src="img/coracao.svg" alt="Like">
-                    </div>
-            </div>
-        </div>
-        </div>
-    </main>
-    <footer>
-        <div class="PrinFooter">
-        <div class="logoFooter">
-        <img src="img/Logo.svg" alt="LogoSeek do rodapé, sua aparencia é de um circulo feito de triangulos com cores frias como varios tons de azul e roxo, formando um olho similar a uma camera quando se retrai">
-        </div>
-        <section class="Info">
-            <a href="">Contato <br><br> Avisos</a>
-            <a href="sobre.html">Sobre nós <br><br>Atualizações</a>
-            <a href="ajuda.html">Ajuda</a>
-        </section>
-        <section class="contatos">
-            <a><img src="img/Linkedin.svg" alt="Linkedin"></a>
-            <a><img src="img/whatsapp.svg" alt="Whatsapp"></a>
-            <a href="https://www.instagram.com/seek.oficial/"><img src="img/instagram.svg" alt="Botão do Instagram de Seek"></a>
-            <p>seek@gmail.com</p>
-        </section>
-        </div>
-        <div class="EndFooter">
-            <p>Todos os direitos reservados. ©Seek 2024</p>
-        </div>
-    </footer>
+      </div>
+      <p id="descricaodacaixaflutuantecursos">Breve descrição do curso</p>
+      <div class="infocursoscaixaflutuante">
+          <div class="iconscaixaflutuantecursos">
+              <img src="../img/estrela.svg" alt="">
+              <img src="../img/cinema.svg" alt="">
+              <img src="../img/perfilcursos.svg" alt="">
+              <img src="../img/like.svg" alt="">
+              <img src="../img/som.svg" alt="">
+              <img src="../img/legenda.svg" alt="">
+
+
+          </div>
+          <div class="informacoessobreocursocaixaflutuante">
+
+              <p>Level: iniciante</p>
+              <p>15 módulos(50min)</p>
+              <p>20.000 estudantes</p>
+              <p>89% reviews positivas</p>
+              <p>Audio: Português</p>
+              <p>CC: inglês,espanhol</p>
+
+          </div>
+          <div class="botaomaisinfocursoscaixaflutuante">
+              <button id="botaoinscrever">Mais informações</button>
+          </div>
+          <div class="assinarcursocaixaflutuante">
+
+              <button id="idassinarcursocaixaflutuante">Assinar</button>
+
+          </div>
+      </div>
+  </div>
+  </main>
+
+  <button class="btn-scroll-top" arial-label="Voltar ao topo">
+    <img src="img/arrow-top.svg" alt="Voltar ao topo" width="50" height="50" />
+  </button>
+
+  <footer>
+
+    <div class="linksfooter">
+
+      <div class="infofooter">
+        <a href="ajuda.html" class="AjuF">Ajuda</a>
+        <a href="index.html" class="TerF">Termos</a>
+        <a href="index.html" class="AtuF">Atualizações</a>
+      </div>
+
+      <div class="infofooter">
+        <a href="index.html" class="SobA">Sobre Nós</a>
+        <a href="index.html" class="ConT">Contato</a>
+
+      </div>
+      <div class="infofooter">
+        <a href="avisos.html" class="AviF">Avisos</a>
+
+        <select name="Idioma" id="idiomaSelect" onchange="TrocaLinguagem(this.value)">
+          <option value="pt">Português</option>
+          <option value="eng">English</option>
+          <option value="es">Español</option>
+          <option value="jp">日本語</option>
+        </select>
+      </div>
+
+      <div class="infofooter">
+        <img src="img/logoSeekk 3@2x.png" alt="Logo Seek">
+      </div>
+
+    </div>
+
+    <div class="direitosautorais">
+      <p class="DirF">Todos os direitos reservados. ©Seek <span class="anoatual"></span>.</p>
+    </div>
+
+
+  </footer>
+
+
+  <script src="script/cake.js"></script>
+  <script src="script/cake2.js"></script>
+  <script src="script/lfy.js"></script>
+  <script src="script/cautela.js"></script>
 </body>
+
 </html>
+<!-- <input type="checkbox" name="campos" id="campos"> -->
