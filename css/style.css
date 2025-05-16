@@ -1279,15 +1279,18 @@ footer {
 
 .form {
     display: flex;
-    justify-content: space-between;
     gap: 20px;
     margin-bottom: 0.5rem;
 }
 
-.left-section,
-.right-section {
+.left-section {
    width: 20rem ;
 }
+
+.right-section{
+    width: 30rem ;
+}
+
 
 .left-section {
     padding: 0 1rem;
@@ -1461,7 +1464,6 @@ footer {
 
 
 .input-group {
-    padding-right: 1rem;
     margin-bottom: 20px;
     color: red;
     font-size: 80%;
@@ -1472,7 +1474,7 @@ footer {
 
 .input-group label {
     display: block;
-    margin-bottom: 5px;
+    /* margin-bottom: 8px; */
     font-weight: bold;
 }
 
@@ -1481,9 +1483,15 @@ footer {
     color: black;
 }
 
+.areadebox{
+    display: flex;
+    align-items: center;
+ 
+}
+
 .input-group input,
 .input-group textarea {
-    width: 100%;
+    /* width: 100%; */
     padding: 10px;
     border: 1px solid var(--cinzaBase);
     border-radius: 5px;
@@ -1493,8 +1501,21 @@ footer {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.input-group .caixadecheck{
+    box-shadow: none;
+    /* width: 20%; */
+   width: 1.5rem;
+   height: 1.5rem;
+}
+
+.input-group  .Label-Check{
+    margin-right: 5rem;
+    margin-left: 3px;
+    color: black;
+}
+
 .input-group textarea {
-    height: 5rem;
+    height: 6rem;
 }
 
 .required {
