@@ -11,11 +11,13 @@
 
     --preto: #0E0E0E;
 
+    --pretoBorda: rgba(5, 5, 5, 0.5);
+
     --azulBase: #2B63F0;
 
     --azulBasee: #00008b;
 
-    --azulBasec: rgb(116, 84, 233);
+    --azulBasec: #76ADFF;
 
     --roxobase: #942af1;
 
@@ -25,6 +27,7 @@
 
     --vermelhom: #EF0000;
 
+    --cinzaBorda: rgba(162, 162, 162,0.5);
 
 
     --ModoEscuroBase: #1F1F1F;
@@ -58,14 +61,19 @@
 .modoEscuro .avisos h1, .modoEscuro .atualizacoes h2, .modoEscuro .migalhadepaosobrenos {
     color: var(--ModoEscuroFontV);
 }
-
-.modoEscuro .caixaatualizacaoesavisos {
-    background-color: var(--ModoEscuroFilt);
+.modoEscuro .containerUpdate{
+    background-color: #3b3b3b;
+    border:var(--pretoBorda);
 }
 
-.modoEscuro .servidor , .modoEscuro .portifolios,.modoEscuro .aparencia , .modoEscuro .responsividade{
+.modoEscuro .dataUpdate{
+    color: var(--azulBasec);
+}
+
+
+/* .modoEscuro .servidor , .modoEscuro .portifolios,.modoEscuro .aparencia , .modoEscuro .responsividade{
     border: 2px solid var(--brancoBase);
-}
+} */
 /*-------------------------------- Modo Escuro Fim --------------------------------*/
 
 
@@ -108,11 +116,8 @@
     display: flex;
     flex-direction: column;
     padding: 4rem 7rem ;
-    height: 80vh;
-
 }
 .atualizacoes h2{
-
     font-size: 2.5rem;
     color: var(--azulBase);
     margin-bottom: 2rem;
@@ -122,82 +127,44 @@
 .caixaatualizacaoesavisos{
     display: flex;
     flex-direction: column;
-    background-color: var(--cinzaBasec);
-    padding: 1rem;
+}
+.containerUpdate{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.6rem;
+    padding: 2rem 1rem;
+    border: 1px solid var(--cinzaBorda);
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    background-color: #F5F5F5;
+}
+.contUpdHeader{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    height: 30rem;
 }
-.servidor{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.2rem;
-    border: 2px solid var(--preto);
-    border-radius: 5px;
-    font-size: 1.5rem;
-    height: 3rem;
+.contUpdText{
+    font-size: 1.2rem;
+     height: 5rem;
 }
-.servidor img {
+.containerUpdate img {
     width: 2rem;
     height: 1rem;
     margin-right: 6px;
 }
-.portifolios img {
-    width: 2rem;
-    height: 1rem;
-    margin-right: 6px;
-}
-.aparencia img {
-    width: 2rem;
-    height: 1rem;
-    margin-right: 6px;
-}
-.responsividade img {
-    width: 2rem;
-    height: 1rem;
-    margin-right: 6px;
-}
-.portifolios{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.2rem;
-    border: 2px solid var(--preto);
-    border-radius: 5px;
-    font-size: 1.5rem;
-    height: 3rem;
 
-}
-.aparencia{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.2rem;
-    border: 2px solid var(--preto);
-    border-radius: 5px;
-    font-size: 1.5rem;
-    height: 3rem;
-}
-.responsividade{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.2rem;
-    border: 2px solid var(--preto);
-    border-radius: 5px;
-    font-size: 1.5rem;
-    height: 3rem;
-
+.dataUpdate{
+    font-size:1.5rem;
+    font-weight: 600;
+    color: var(--azulBase);
 }
 .textoavisos p{
     font-size: 1.5rem;
 }
+
 @media screen and (max-width: 1000px) {
 
     .textoavisos p{
@@ -216,17 +183,11 @@
     .textoavisos p{
         font-size: 1.2rem;
     }
-    .responsividade{
+    .contUpdHeader{
         font-size: 1.3rem;
     }
-    .aparencia{
-        font-size: 1.3rem;
-    }
-    .portifolios{
-        font-size: 1.3rem;
-    }
-    .servidor{
-        font-size: 1.3rem;
+    .contUpdText{
+        font-size: 1rem;
     }
     .avisos {
         padding: 4rem 2rem;
@@ -241,40 +202,25 @@
     .textoavisos p{
         font-size: 1rem;
     }
-    .responsividade{
-        font-size: 1rem;
+    .contUpdHeader{
+        font-size: 1.1rem;
     }
-    .aparencia{
-        font-size: 1rem;
+    .contUpdText{
+        font-size: 0.8rem;
     }
-    .portifolios{
-        font-size: 1rem;
-    }
-    .servidor{
-        font-size: 1rem;
-    }
+    
 }
 @media screen and (max-width: 500px){
 
     .textoavisos p{
         font-size: 0.8rem;
     }
-    .responsividade{
-        font-size: 0.8rem;
+      .contUpdHeader{
+        font-size: 0.9rem;
     }
-    .aparencia{
-        font-size: 0.8rem;
+    .contUpdText{
+        font-size: 0.6rem;
     }
-    .portifolios{
-        font-size: 0.8rem;
-    }
-    .servidor{
-        font-size: 0.8rem;
-    }
-    .avisos {
-        padding: 4rem 1rem;
-    }
-    
     .atualizacoes{
         padding: 4rem 1rem ;
     }

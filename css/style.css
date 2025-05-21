@@ -1228,7 +1228,7 @@ footer {
 .confirmation-container .setaCorfirmar, .confirmation-container2 .setaCorfirmar {
     display: flex;
     justify-content: space-between;
-    padding: 0 0 1rem 1rem;
+    padding: 0 1rem 1rem 1rem;
 }
 
 .confirmation-container .setaCorfirmar button img, .confirmation-container2 .setaCorfirmar button img  {
@@ -1280,15 +1280,17 @@ footer {
 .form {
     display: flex;
     gap: 20px;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
 }
 
 .left-section {
    width: 20rem ;
 }
 
-.right-section{
-    width: 30rem ;
+.group-right{
+    overflow-y: scroll;
+    height: 18rem;
+    width: 22.7rem;
 }
 
 
@@ -1515,7 +1517,8 @@ footer {
 }
 
 .input-group textarea {
-    height: 6rem;
+    height: 7rem;
+    width: 21rem;
 }
 
 .required {

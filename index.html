@@ -90,7 +90,7 @@
     </div>
     <div id="usersite" class="usersite">
       <!-- <a href=""><img src="img/bell2.svg" alt="Sino" /></a> -->
-       <p id="nome_user"></p>
+      <p id="nome_user"></p>
       <button onclick="abrirMenu()">
         <img id="img_user" src="img/user2.svg" alt="User" />
       </button>
@@ -165,12 +165,13 @@
       <div class="botaomodoescuro">
         <label for=""><img src="img/lua.png" alt="Lua" /></label>
         <div class="checkbox-con">
-          <input  onclick="MudarModos()" id="checkbox" type="checkbox"/>
+          <input onclick="MudarModos()" id="checkbox" type="checkbox" />
         </div>
         <label for=""><img src="img/sol.png" alt="Sol" /></label>
       </div>
       <div id="diventrarsair">
-        <button id="sairdomenuperfil" class="sairP"><a href="login.html" ><span class="LoginPerfil">Login</span></a></button>
+        <button id="sairdomenuperfil" class="sairP"><a href="login.html"><span
+              class="LoginPerfil">Login</span></a></button>
       </div>
     </div>
   </header>
@@ -194,7 +195,7 @@
         <span id="botaofazerloginconfirmar" class="btn-confirm"><a href="login.html">fazer login</a></span>
       </div>
     </div>
-    
+
     <!---------- Caixa de Seleção de Usuário ------- -->
 
     <div class="container1" id="user-box">
@@ -246,8 +247,8 @@
       <div id="caixadenotificacaocompletarcadastro" class="caixadenotificacaocompletarcadastro">
         <h2>Não é possivel fazer isso agora</h2>
         <p>Você precisa completar o cadastro antes de fechar esta janela.</p>
-    </div>
-    
+      </div>
+
       <!-- Caixa  do tipo de usuario-->
       <div class="confirmation-container" id="confirmation-box">
         <div class="titulocadastro1">
@@ -257,74 +258,77 @@
           </button>
         </div>
         <p class="pp">Antes de prossseguir, preencha os dados abaixo</p>
-<form action="" id="formulariocaixaupdate">
-        <div class="form">
-          <div class="left-section">
-            <div class="profile-photo">
-              <div class="photo-placeholder">
-                <label id="labeladdfoto" for="cadastroFoto">Adicionar foto de perfil</label>
-                <img class="photo-dinamica" id="preview" src="" alt="">
-                <input style="display: none;" type="file" id="cadastroFoto" accept="image/*" />  
+        <form action="" id="formulariocaixaupdate">
+          <div class="form">
+            <div class="left-section">
+              <div class="profile-photo">
+                <div class="photo-placeholder">
+                  <label id="labeladdfoto" for="cadastroFoto">Adicionar foto de perfil</label>
+                  <img class="photo-dinamica" id="preview" src="" alt="">
+                  <input style="display: none;" type="file" id="cadastroFoto" accept="image/*" />
 
+                </div>
+              </div>
+              <div class="input-group">
+                <label for="updatenomeuser">OBRIGATÓRIO<span class="required">*</span></label>
+                <input type="text" id="updatenomeuser" placeholder="Nome de Usuário" />
+                <label for="updateprofissao"></label>
+                <input type="text" id="updateprofissao" placeholder="Sua Profissão" />
               </div>
             </div>
-            <div class="input-group">
-              <label for="updatenomeuser">OBRIGATÓRIO<span class="required">*</span></label>
-              <input type="text" id="updatenomeuser" placeholder="Nome de Usuário" />
-              <label for="updateprofissao"></label>
-              <input type="text" id="updateprofissao" placeholder="Sua Profissão" />
+
+            <div class="right-section">
+              <section class="group-right">
+                <div class="input-group">
+                  <label for="" class="Descricao1">Possui alguma deficiência?</label>
+
+                  <div class="areadebox">
+                    <input type="checkbox" class="caixadecheck"> <label for="" class="Label-Check">Sim</label>
+                    <input type="checkbox" class="caixadecheck"> <label for="" class="Label-Check">Não</label>
+                  </div>
+
+                  <label for="" class="Descricao1">Deseja utilizar a Barra de acessibilidade?</label>
+                  <div class="areadebox">
+                    <input type="checkbox" class="caixadecheck"> <label for="" class="Label-Check">Sim</label>
+                    <input type="checkbox" class="caixadecheck"> <label for="" class="Label-Check">Não</label>
+                  </div>
+
+                  <label for="" class="Descricao1">Qual o tipo de sua deficiência?</label>
+                  <div class="areadebox">
+                    <input type="checkbox" class="caixadecheck"> <label for="" class="Label-Check">Fisica</label>
+                    <input type="checkbox" class="caixadecheck"> <label for="" class="Label-Check">Intelectual</label>
+                  </div>
+                  <label class="Descricao1" for="updatedescricao">Descrição</label>
+                  <textarea id="updatedescricao" placeholder="Descrição"></textarea>
+                </div>
+                <div class="certficateslabel">
+                  <label>Certificados</label>
+                </div>
+                <div class="certificates">
+                  <div class="certficatess">
+                    <button class="add-section-btn">
+                      Adicionar seção ao perfil
+                    </button>
+                    <button class="add-icon">+</button>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
-
-          <div class="right-section">
-            <div class="input-group">
-              <label for="" class="Descricao1">Possui alguma deficiência?</label>
-
-              <div class="areadebox">
-              <input type="checkbox" class="caixadecheck"> <label for="" class="Label-Check">Sim</label>
-              <input type="checkbox" class="caixadecheck"> <label for="" class="Label-Check">Não</label>
+          
+          <div class="setaCorfirmar">
+            
+            <div> <button><img src="/img/setaparacima.svg" alt="seta" />
+              <p>Voltar</p>
             </div>
-
-            <label for="" class="Descricao1">Deseja utilizar a Barra de acessibilidade?</label>
-              <div class="areadebox">
-                <input type="checkbox" class="caixadecheck"> <label for="" class="Label-Check">Sim</label>
-                <input type="checkbox" class="caixadecheck"> <label for="" class="Label-Check">Não</label>
-              </div>
-
-              <label for="" class="Descricao1">Qual o tipo de sua deficiência?</label>
-              <div class="areadebox">
-                <input type="checkbox" class="caixadecheck"> <label for="" class="Label-Check">Fisica</label>
-                <input type="checkbox" class="caixadecheck"> <label for="" class="Label-Check">Intelectual</label>
-              </div>
-              <label class="Descricao1" for="updatedescricao">Descrição</label>
-              <textarea id="updatedescricao" placeholder="Descrição"></textarea>
+            
+            <div class="parteEsquerda">
+              <input type="submit" id="submit" value="Salvar" class="submit-button" /> <img src="/img/setaparacima.svg"
+              alt="seta" />
             </div>
-            <div class="certficateslabel">
-              <label>Certificados</label>
-            </div>
-            <div class="certificates">
-              <div class="certficatess">
-                <button class="add-section-btn">
-                  Adicionar seção ao perfil
-                </button>
-                <button class="add-icon">+</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
-
-        <div class="setaCorfirmar">
-
-         <div > <button><img src="/img/setaparacima.svg" alt="seta" />
-            <p>Voltar</p>
-          </div>
-
-          <div class="parteEsquerda">
-            <input type="submit" id="submit" value="Salvar" class="submit-button" />  <img src="/img/setaparacima.svg" alt="seta" />
-          </div>
           </button>
         </div>
+      </form>
 
       </div>
 
@@ -406,13 +410,16 @@
 
       <button class="buttonFiltro">
         <svg viewBox="0 0 68 64" class="modoEscuroImagem1">
-            <path d="M11.3219 13.2295H45.2871" />
-            <path d="M11.3219 31.7505H28.3045" />
-            <path d="M39.6262 31.7505H56.6088" />
-            <path d="M22.6437 50.2715H56.6089" />
-            <path d="M50.948 18.5216C54.0744 18.5216 56.6088 16.1523 56.6088 13.2298C56.6088 10.3072 54.0744 7.93799 50.948 7.93799C47.8216 7.93799 45.2871 10.3072 45.2871 13.2298C45.2871 16.1523 47.8216 18.5216 50.948 18.5216Z" />
-            <path d="M33.9653 37.0426C37.0917 37.0426 39.6262 34.6733 39.6262 31.7508C39.6262 28.8282 37.0917 26.459 33.9653 26.459C30.8389 26.459 28.3044 28.8282 28.3044 31.7508C28.3044 34.6733 30.8389 37.0426 33.9653 37.0426Z" />
-            <path d="M16.9828 55.564C20.1092 55.564 22.6436 53.1948 22.6436 50.2723C22.6436 47.3497 20.1092 44.9805 16.9828 44.9805C13.8564 44.9805 11.3219 47.3497 11.3219 50.2723C11.3219 53.1948 13.8564 55.564 16.9828 55.564Z" />
+          <path d="M11.3219 13.2295H45.2871" />
+          <path d="M11.3219 31.7505H28.3045" />
+          <path d="M39.6262 31.7505H56.6088" />
+          <path d="M22.6437 50.2715H56.6089" />
+          <path
+            d="M50.948 18.5216C54.0744 18.5216 56.6088 16.1523 56.6088 13.2298C56.6088 10.3072 54.0744 7.93799 50.948 7.93799C47.8216 7.93799 45.2871 10.3072 45.2871 13.2298C45.2871 16.1523 47.8216 18.5216 50.948 18.5216Z" />
+          <path
+            d="M33.9653 37.0426C37.0917 37.0426 39.6262 34.6733 39.6262 31.7508C39.6262 28.8282 37.0917 26.459 33.9653 26.459C30.8389 26.459 28.3044 28.8282 28.3044 31.7508C28.3044 34.6733 30.8389 37.0426 33.9653 37.0426Z" />
+          <path
+            d="M16.9828 55.564C20.1092 55.564 22.6436 53.1948 22.6436 50.2723C22.6436 47.3497 20.1092 44.9805 16.9828 44.9805C13.8564 44.9805 11.3219 47.3497 11.3219 50.2723C11.3219 53.1948 13.8564 55.564 16.9828 55.564Z" />
         </svg>
         <span class="PerB"> Personalizar a Galeria </span>
       </button>
@@ -422,19 +429,21 @@
     <section class="areaDePesquisa">
       <span class="closeSearchArea">&times;</span>
       <input type="text" placeholder="Pesquisar" class="pesquisarindex">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum debitis hic id tempore recusandae provident sunt velit deleniti! Fugit qui dicta suscipit omnis architecto eaque necessitatibus asperiores facere cumque delectus.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum debitis hic id tempore recusandae
+        provident sunt velit deleniti! Fugit qui dicta suscipit omnis architecto eaque necessitatibus asperiores facere
+        cumque delectus.</p>
 
       <h2>Seguindo</h2>
 
       <div class="imagensFiltro">
-          <img src="placeholder.jpg" alt="Imagem do filtro" class="imgFiltro">
-          <img src="placeholder.jpg" alt="Imagem do filtro" class="imgFiltro">
-          <img src="placeholder.jpg" alt="Imagem do filtro" class="imgFiltro">
-          <img src="placeholder.jpg" alt="Imagem do filtro" class="imgFiltro">
-          <img src="placeholder.jpg" alt="Imagem do filtro" class="imgFiltro">
-          <img src="placeholder.jpg" alt="Imagem do filtro" class="imgFiltro">
+        <img src="placeholder.jpg" alt="Imagem do filtro" class="imgFiltro">
+        <img src="placeholder.jpg" alt="Imagem do filtro" class="imgFiltro">
+        <img src="placeholder.jpg" alt="Imagem do filtro" class="imgFiltro">
+        <img src="placeholder.jpg" alt="Imagem do filtro" class="imgFiltro">
+        <img src="placeholder.jpg" alt="Imagem do filtro" class="imgFiltro">
+        <img src="placeholder.jpg" alt="Imagem do filtro" class="imgFiltro">
       </div>
-  </section>
+    </section>
 
     <div class="gride">
       <div class="divPortifolio" id="filho1">
@@ -740,7 +749,7 @@
       </div>
     </div>
     <!--Fim modal-->
-    
+
     <div id="ativaredasativarvlibras" class="ativaredasativarvlibras">
       <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -752,11 +761,11 @@
       <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
       </script>
-      </div>
+    </div>
 
 
     </div>
-  
+
   </main>
 
   <!--main tendências-->
